@@ -5,6 +5,7 @@ using TMPro;
 
 public class Primitive : MonoBehaviour
 {
+    //ENCAPSULATION
     public string p_name { set
         {
             if (value.Length >= 8 || value.Length < 1)
@@ -26,6 +27,7 @@ public class Primitive : MonoBehaviour
         color = GetComponent<Renderer>().material.color;
     }
 
+    //ABSTRACTION
     public virtual void DisplayText()
     {
         text.text = "Default Text";
